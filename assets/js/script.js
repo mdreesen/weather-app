@@ -6,7 +6,12 @@ function today() {
         .then(function(response) {
             console.log(response);
 
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                alert("Please enter valid city")
+            }
+
         })
         .then(function(response) {
             console.log(response);
@@ -39,6 +44,7 @@ function today() {
             //console.log(tempInfo.textContent = response.main);
             infoContainer.appendChild(tempInfo);
         })
+
 };
 
 var dayContainerEl = document.querySelector('#day-container');
@@ -51,7 +57,11 @@ function fiveDay() {
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=b6a498bf6c1a44cb20137595567af9c8&units=imperial')
         .then(function(response) {
             console.log(response);
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                alert("Please enter valid city")
+            }
         })
         .then(function(response) {
             console.log(response.list);
