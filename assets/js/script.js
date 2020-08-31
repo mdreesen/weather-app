@@ -88,7 +88,7 @@ function fiveDay() {
 
                 // DAY TEMP
                 var tempEl = document.createElement('P');
-                tempEl.textContent = " - Temp Is: " + dayTemp;
+                tempEl.textContent = " - Average Temp Is: " + dayTemp;
                 dayDiv.appendChild(tempEl)
 
                 // HUMIDITY
