@@ -2,7 +2,7 @@
 function today() {
     var city = document.querySelector('#city').value;
     // Fetching the URL
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=b6a498bf6c1a44cb20137595567af9c8&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=b6a498bf6c1a44cb20137595567af9c8&units=imperial')
         .then(function(response) {
             console.log(response);
 
@@ -48,7 +48,7 @@ var tempContainerEl = document.querySelector('#temp-container');
 function fiveDay() {
     var city = document.querySelector('#city').value;
 
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=b6a498bf6c1a44cb20137595567af9c8&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=b6a498bf6c1a44cb20137595567af9c8&units=imperial')
         .then(function(response) {
             console.log(response);
             return response.json();
