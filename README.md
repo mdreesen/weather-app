@@ -1,7 +1,7 @@
 # weather-app
 * This app gets the user information about the weather happening right now (Today), or if they choose they can have the 5 day weather (week).
 
-** Github pages URL
+* Github pages URL
 https://mdreesen.github.io/weather-app/
 
 # Screenshots
